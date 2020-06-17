@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+    <TextView
+    android:layout_marginTop="10dp"
+    android:id="@+id/text_name"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Ho va Ten:"
+    android:textSize="20sp"
+    />
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_name"/>
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:id="@+id/text_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dia chi:"
+        android:textSize="20sp"
+        android:layout_below="@+id/text_name"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_name"
+        android:layout_below="@+id/edit_name"/>
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngay sinh:"
+        android:textSize="20sp"
+        android:layout_below="@+id/text_address"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_name"
+        android:layout_below="@+id/edit_address"/>
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="20sp"
+        android:layout_below="@+id/text_date"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_mail"
+        android:layout_below="@+id/edit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_name"/>
+    <Button
+        android:text="SAVE"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button_save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_mail"
+        />
+
+
+
+
+</RelativeLayout>
